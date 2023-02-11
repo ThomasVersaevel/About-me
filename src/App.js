@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Outlet, NavLink } from 'react-router-dom';
+import { Button } from "../react-bootstrap/Button";
 
 
 export default class App extends React.Component {
@@ -10,7 +11,7 @@ export default class App extends React.Component {
     super();
     this.state = {
       title: "Welcome to my interactive CV",
-      footer: "Thanks for reading!",
+      footer: "Thanks for reading my CV!",
     };
   }
 
@@ -34,7 +35,6 @@ export default class App extends React.Component {
           <Footer title={this.state.footer} />
         </div>
       </div>
-
     )
   }
 }
