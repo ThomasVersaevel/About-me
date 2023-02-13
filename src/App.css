@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Lucida Sans Unicode';
 }
 
 .App-logo {
@@ -14,35 +15,82 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #393f4b;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  color: rgb(31, 246, 253);
+}
+.App-footer {
+  background-color: #393f4b;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 1vmin);
+  font-family: 'Arial';
   color: rgb(31, 246, 253);
 }
 
+#header-subtitle {
+  color:rgb(139, 139, 139)
+}
+
+#navbarBackground {
+  background-color: #393f4b;
+  width: 100%;
+}
+
 .App-nav {
-  background-color: #282c34;
+  background-color: #393f4b;
   min-height: 5vh;
   display: flex;
   flex-direction: row;
-  align-items: left;
+  align-items: stretch;
+  float: left;
+  gap: 1rem;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 .nav-item {
+  align-items: stretch;
+  display: flex;
+  height: 100%;
   color: #ffffff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
   text-decoration: none;
+  padding: .25rem;
+}
+
+.nav-item-active {
+  background-color: #8490aa;
+  color: #f58814;
+  align-items: stretch;
+  display: flex;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  padding: .25rem;
+}
+
+.nav-item:hover {
+  background-color: #8490aa;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.mainContent {
+  background-color: #f58814;
+  font-family: 'Lucida Sans Unicode';
 }
 
 @keyframes App-logo-spin {
