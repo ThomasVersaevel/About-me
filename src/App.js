@@ -60,13 +60,13 @@ export default class App extends React.Component {
             </div>
           </Row>
           <Row>
-          <div>
-            <Container>
-              <div className="mainContent">
-                <Outlet />
-              </div>
-            </Container>
-          </div>
+            <div>
+              <Container>
+                <div className="mainContent">
+                  <Outlet />
+                </div>
+              </Container>
+            </div>
           </Row>
         </Container>
         <div className="App-footer">

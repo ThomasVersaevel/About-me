@@ -12,17 +12,6 @@ export default class WorkExperience extends React.Component {
         <div className="col-md-9">
           <Container>
             <Row>
-              <Col>
-                <div>
-                  <h3>Work Experience</h3>
-                </div>
-              </Col>
-              <Col>
-              </Col>
-              <Col>
-              </Col>
-            </Row>
-            <Row>
               <div>
                 <Col>
                   <p>
