@@ -1,15 +1,14 @@
 import React from "react";
 import "./App.css";
 import "./Animation.css";
+// import "./bootstrap/css/bootstrap.css"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Outlet, NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Nav, Navbar, Row, Col } from "react-bootstrap";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 
 export default class App extends React.Component {
   constructor() {
@@ -34,8 +33,7 @@ export default class App extends React.Component {
                 />
               </div>
             </Col>
-            <Col>
-            </Col>
+            <Col></Col>
           </Row>
           <Row>
             <Col>
@@ -48,7 +46,9 @@ export default class App extends React.Component {
                       }
                       to="introduction"
                     >
+                      <div className="shadow-3">
                       Introduction
+                      </div>
                     </NavLink>
                     <NavLink
                       className={({ isActive }) =>

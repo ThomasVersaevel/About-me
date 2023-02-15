@@ -2,8 +2,8 @@
   --darkGrey: #393f4b;
   --ddarkGrey: #21242c;
   --grey: #434a58;
-  --lightGrey: #a9adb4;
-  --llightGrey: #93969c;
+  --lightGrey: #cfd6e2ee;
+  --llightGrey: #9599a1;
   --orange: #f46e0f;
 }
 
@@ -23,14 +23,11 @@ h3 {
   }
 }
 /* 
-* color info:
-* orange : #F46E0F
-* dark : #212121
-* lighter: #434a58
+* padding order is trbl
 */
 .App-header {
   background: linear-gradient(to top, var(--darkGrey), var(--ddarkGrey));
-  /* background-color: var(--darkGrey); */
+  background-color: var(--darkGrey);
   min-height: 5vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +36,9 @@ h3 {
   font-family: Arial, sans-serif;
   color: var(--orange);
 }
+
 .App-footer {
+  background: linear-gradient(to bottom, var(--darkGrey), var(--ddarkGrey));
   background-color: var(--darkGrey);
   min-height: 2vh;
   display: flex;
@@ -49,17 +48,20 @@ h3 {
   font-size: calc(1px + 1vmin);
   font-family: "Arial";
   color: var(--orange);
+  text-shadow: 1px 0 3px #444444;
 }
 
 #header-title {
   font-size: calc(10px + 2vmin);
   margin-top: -3vh;
   margin-bottom: -3vh;
+  text-shadow: 1px 0 5px #000000;
 }
 
 #header-title-subtitle {
   color: #c9cdd6;
   margin-top: -3vh;
+  text-shadow: 2px 0 5px #000000;
 }
 
 .App-nav {
@@ -92,6 +94,8 @@ h3 {
   text-decoration: none;
   padding: 0.35rem 0.45rem 0rem 0.45rem;
   border-radius: 12px 12px 0 0;
+  box-shadow: 3px 0px 3px 3px rgba(0,0,0,.3); /*h, v, blur, spread*/
+  
 }
 
 .nav-item:hover {
@@ -117,13 +121,18 @@ h3 {
   width: 70%;
   margin: auto;
   border-radius: 0 0 20px 20px;
+  box-shadow: -5px 10px 10px 10px rgba(0,0,0,.3), 5px 10px 10px 10px rgba(0,0,0,.3);
 }
 
 body {
+  background-image: url("./assets/background.jpg");
   background-color: var(--grey);
 }
 
-.Grid {
+.image-large {
+  height: auto;
+  max-width: 40vh
+  
 }
 
 @keyframes App-logo-spin {
