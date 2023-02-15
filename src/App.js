@@ -22,9 +22,14 @@ export default class App extends React.Component {
     return (
       <div>
         <div className={"App-header"}>
-          <Header title={this.state.title} subtitle={this.state.subtitle} />
+          <Container>
+            <div id="header-title">
+              <Header title={this.state.title} subtitle={this.state.subtitle} />
+            </div>
+          </Container>
         </div>
-        <Container>
+
+        <Container className="Main-content">
           <Row>
             <div id="navbarBackground">
               <Navbar sticky="top">
@@ -62,7 +67,7 @@ export default class App extends React.Component {
           <Row>
             <div>
               <Container>
-                <div className="mainContent">
+                <div className="main-content">
                   <Outlet />
                 </div>
               </Container>
