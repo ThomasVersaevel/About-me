@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./Animation.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Outlet, NavLink } from "react-router-dom";
@@ -7,6 +8,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 export default class App extends React.Component {
   constructor() {
@@ -14,24 +17,28 @@ export default class App extends React.Component {
     this.state = {
       title: "Thomas Versaevel",
       subtitle: "CV",
-      footer: "Thanks for reading my CV!",
+      footer: "Thank you for reading my CV",
     };
   }
 
   render() {
     return (
       <div>
-        <div className={"App-header"}>
-          <Container>
-            <div id="header-title">
-              <Header title={this.state.title} subtitle={this.state.subtitle} />
-            </div>
-          </Container>
-        </div>
-
-        <Container className="Main-content">
+        <Container>
+          <Row className={"App-header"}>
+            <Col>
+              <div id="header-title">
+                <Header
+                  title={this.state.title}
+                  subtitle={this.state.subtitle}
+                />
+              </div>
+            </Col>
+            <Col>
+            </Col>
+          </Row>
           <Row>
-            <div id="navbarBackground">
+            <Col>
               <Navbar sticky="top">
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="App-nav">
@@ -59,19 +66,29 @@ export default class App extends React.Component {
                     >
                       Work Experience
                     </NavLink>
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive ? "nav-item-active" : "nav-item"
+                      }
+                      to="grid"
+                    >
+                      Grid
+                    </NavLink>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>
-            </div>
+            </Col>
           </Row>
           <Row>
-            <div>
-              <Container>
-                <div className="main-content">
+            <Col></Col>
+            <Col className="Main-content">
+              <TransitionGroup>
+                <CSSTransition timeout={300} className="fade">
                   <Outlet />
-                </div>
-              </Container>
-            </div>
+                </CSSTransition>
+              </TransitionGroup>
+            </Col>
+            <Col></Col>
           </Row>
         </Container>
         <div className="App-footer">

@@ -1,10 +1,20 @@
+:root {
+  --darkGrey: #393f4b;
+  --ddarkGrey: #21242c;
+  --grey: #434a58;
+  --lightGrey: #a9adb4;
+  --llightGrey: #93969c;
+  --orange: #f46e0f;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 h3 {
-  color: #F46E0F
+  color: var(--orange);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,28 +29,28 @@ h3 {
 * lighter: #434a58
 */
 .App-header {
-  background-color: #393f4b;
+  background: linear-gradient(to top, var(--darkGrey), var(--ddarkGrey));
+  /* background-color: var(--darkGrey); */
   min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
-  color: #f58814;
+  color: var(--orange);
 }
 .App-footer {
-  background-color: #393f4b;
+  background-color: var(--darkGrey);
   min-height: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(1px + 1vmin);
-  font-family: 'Arial';
-  color: #f58814;
-  /* position: fixed; */
-  /* bottom: 0px; */
+  font-family: "Arial";
+  color: var(--orange);
 }
+
 #header-title {
   font-size: calc(10px + 2vmin);
   margin-top: -3vh;
@@ -52,18 +62,11 @@ h3 {
   margin-top: -3vh;
 }
 
-#navbarBackground {
-  background-color: #393f4b;
-  width: 100%;
-}
-
 .App-nav {
-  background-color: #393f4b;
+  background-color: var(--darkGrey);
   min-height: 5vh;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  float: left;
   gap: 1rem;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -73,26 +76,30 @@ h3 {
   display: flex;
   height: 100%;
   color: #ffffff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
   text-decoration: none;
-  padding: .25rem;
+  padding: 0.35rem 0.45rem 0rem 0.45rem;
 }
 
 .nav-item-active {
-  background-color: #c9cdd6;
-  color: #f58814;
+  background-color: var(--lightGrey);
+  color: var(--orange);
   align-items: stretch;
   display: flex;
-  height: 10%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
   text-decoration: none;
-  padding: .25rem;
+  padding: 0.35rem 0.45rem 0rem 0.45rem;
+  border-radius: 12px 12px 0 0;
 }
 
 .nav-item:hover {
-  background-color: #c9cdd6;
+  background-color: var(--lightGrey);
+  align-items: stretch;
+  display: flex;
+  padding: 0.35rem 0.45rem 0rem 0.45rem;
+  border-radius: 12px 12px 0 0;
 }
 
 .App-link {
@@ -102,15 +109,22 @@ h3 {
 .Main-content {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #c9cdd6;
-  min-height: 73vh;
+  background: linear-gradient(to bottom, var(--lightGrey), var(--llightGrey));
+  min-height: 74vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
 }
+
 body {
-  background-color: #434a58;
+  background-color: var(--grey);
 }
 
-
-
+.Grid {
+}
 
 @keyframes App-logo-spin {
   from {
