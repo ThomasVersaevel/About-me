@@ -1,14 +1,17 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+// import "../bootstrap/css/bootstrap.css"
 
-export default class Education extends React.Component {
+const bstrp = '../bootstrap/css/bootstrap.css'; 
+
+export default class Grid extends React.Component {
   render() {
     return (
       <>
         <Row>
           <Col md={{offset: 2}}>
-            <div className="shadow-3">
+            <div >
               <img
                 src={require("../assets/profilePicture.jpeg")}
                 className="image-large"

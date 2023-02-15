@@ -12,7 +12,7 @@ import WorkExperience from "./components/WorkExperience";
 import Introduction from "./components/Introduction";
 import Grid from "./components/Grid";
 
-
+document.body.style.overflow = "hidden"
 
 
 ReactDOM.render(

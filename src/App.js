@@ -23,7 +23,7 @@ export default class App extends React.Component {
     return (
       <>
         <div>
-          <Container className="container-margin" fluid="true">
+          <Container className="container-margin" >
             <Row className={"App-header"}>
               <Col md={8}>
                 <div id="header-title">
@@ -46,7 +46,7 @@ export default class App extends React.Component {
                         }
                         to="introduction"
                       >
-                        <div className="shadow-3">Introduction</div>
+                        Introduction
                       </NavLink>
                       <NavLink
                         className={({ isActive }) =>
@@ -78,21 +78,23 @@ export default class App extends React.Component {
               </Col>
               <Col md={2}></Col>
             </Row>
-            <Row>
-              <Col md={1} sm={1}>
+            <Row className="main-content-row">
+              <Col lg={1} md={1} xs={1}>
+
               </Col>
-              <Col md={8} sm={20} className="Main-content">
+              <Col lg={8} md={8} xs={10} className="Main-content">
                 <TransitionGroup>
                   <CSSTransition timeout={300} className="fade">
                     <Outlet />
                   </CSSTransition>
                 </TransitionGroup>
               </Col>
-              <Col md={1} sm={1}>
+              <Col lg={3} md={4}>
+              <div className="vertical-bar-right"></div>
               </Col>
             </Row>
             </Container>
-            <Container fluid='true' className="App-footer-position"> 
+            <Container  className="App-footer-position"> 
             <Row className="App-footer">
               <Col md={8}>
                 <div>
@@ -104,7 +106,7 @@ export default class App extends React.Component {
           </Container>
         </div>
         <div className="vertical-bar-left"></div>
-        <div className="vertical-bar-rightX"></div>
+        
       </>
     );
   }
