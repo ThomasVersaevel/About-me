@@ -7,7 +7,7 @@ export default class Education extends React.Component {
     return (
       <>
         <Row>
-          <Col>
+          <Col md={{offset: 2}}>
             <div className="shadow-3">
               <img
                 src={require("../assets/profilePicture.jpeg")}

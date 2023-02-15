@@ -5,8 +5,34 @@
   --lightGrey: #cfd6e2ee;
   --llightGrey: #9599a1;
   --orange: #f46e0f;
+  --oorange: #b3520d;
+}
+/* Overwrite container top margin */
+.container-margin {
+  margin-top: -8px;
 }
 
+.vertical-bar-left {
+  width: 3vh;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: auto;
+  background: linear-gradient(to left, var(--orange), var(--oorange));
+  background-color: var(--orange);
+  box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 1);
+}
+.vertical-bar-right {
+  width: 25vh;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: auto;
+  background-color: var(--orange);
+
+}
 
 .App-logo {
   height: 40vmin;
@@ -28,7 +54,7 @@ h3 {
 .App-header {
   background: linear-gradient(to top, var(--darkGrey), var(--ddarkGrey));
   background-color: var(--darkGrey);
-  min-height: 5vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,18 +64,19 @@ h3 {
 }
 
 .App-footer {
-  background: linear-gradient(to bottom, var(--darkGrey), var(--ddarkGrey));
-  background-color: var(--darkGrey);
-  min-height: 2vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(1px + 1vmin);
   font-family: "Arial";
   color: var(--orange);
   text-shadow: 1px 0 3px #444444;
+  background: linear-gradient(to bottom, var(--darkGrey), var(--ddarkGrey));
+  background-color: var(--darkGrey);
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 
 #header-title {
   font-size: calc(10px + 2vmin);
@@ -63,15 +90,17 @@ h3 {
   margin-top: -3vh;
   text-shadow: 2px 0 5px #000000;
 }
-
-.App-nav {
+.App-navbar {
   background-color: var(--darkGrey);
   min-height: 5vh;
+  display: flex;
+}
+.App-nav {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
 }
 .nav-item {
   align-items: stretch;
@@ -93,9 +122,7 @@ h3 {
   font-style: normal;
   text-decoration: none;
   padding: 0.35rem 0.45rem 0rem 0.45rem;
-  border-radius: 12px 12px 0 0;
-  box-shadow: 3px 0px 3px 3px rgba(0,0,0,.3); /*h, v, blur, spread*/
-  
+  border-radius: 12px 12px 0 0;  
 }
 
 .nav-item:hover {
@@ -114,14 +141,12 @@ h3 {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to bottom, var(--lightGrey), var(--llightGrey));
-  min-height: 74vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 70%;
   margin: auto;
   border-radius: 0 0 20px 20px;
-  box-shadow: -5px 10px 10px 10px rgba(0,0,0,.3), 5px 10px 10px 10px rgba(0,0,0,.3);
+  /* box-shadow: -5px 10px 10px 10px rgba(0,0,0,.3), 5px 10px 10px 10px rgba(0,0,0,.3); */
 }
 
 body {
@@ -132,7 +157,6 @@ body {
 .image-large {
   height: auto;
   max-width: 40vh
-  
 }
 
 @keyframes App-logo-spin {
