@@ -82,7 +82,7 @@ export default class App extends React.Component {
               <Col lg={1} md={1} xs={1}>
 
               </Col>
-              <Col lg={8} md={8} xs={10} className="Main-content">
+              <Col lg={8} md={8} xs={10} className="main-content-area">
                 <TransitionGroup>
                   <CSSTransition timeout={300} className="fade">
                     <Outlet />
