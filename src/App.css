@@ -2,7 +2,8 @@
   --darkGrey: #393f4b;
   --ddarkGrey: #21242c;
   --grey: #434a58;
-  --lightGrey: #cfd6e2ee;
+  --ggrey: #363c49;
+  --lightGrey: #dce3f0ee;
   --llightGrey: #9599a1;
   --orange: #f46e0f;
   --ooorange: #ce5f0f;
@@ -12,12 +13,32 @@
 }
 /* Overwrite container that encapsulates the entire website */
 .container-margin {
-  background-color:var(--grey);
+  background: linear-gradient(to top, #434a58f1, var(--grey));
+  /* background-color: var(--grey); */
+}
+
+/* div visualizer for debug */
+/* div {
+  background-color: rgba(128, 128, 128, 0.329);
+  border: 1px solid black;
+} */
+
+h3 {
+  text-shadow: 1px 0 2px #9b9b9b;
+}
+
+/* absolute positioning is a hack for this website */
+#profile-picture {
+  position: absolute;
+  top: 1vh;
+  left: 80rem;
+  justify-content: center;
+  display: flex;
 }
 
 /* This bar is hacked togheter not quite nicely */
 .vertical-bar-left {
-  width: 3vh;
+  width: 2vw;
   height: 150%;
   position: absolute;
   left: 0px;
@@ -29,7 +50,7 @@
   box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 1);
 }
 .vertical-bar-right {
-  width: 25vh;
+  width: 12vw;
   height: 100%;
   position: absolute;
   right: 0px;
@@ -37,7 +58,7 @@
   margin: auto;
   background: linear-gradient(to right, var(--orange), var(--ooorange));
   background-color: var(--orange);
-  /* border: 1px solid black; */
+  box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .App-logo {
@@ -75,10 +96,8 @@
 }
 
 .App-footer {
-  font-size: calc(1px + 1vmin);
   font-family: "Arial";
   color: var(--orange);
-  text-shadow: 1px 0 3px #444444;
   background: linear-gradient(to bottom, var(--darkGrey), var(--ddarkGrey));
   background-color: var(--darkGrey);
   min-height: 5vh;
@@ -87,8 +106,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
 
 #header-title {
   font-size: calc(10px + 2vmin);
@@ -99,6 +116,12 @@
   color: #c9cdd6;
   text-shadow: 2px 0 5px #000000;
 }
+
+#footer-text {
+  font-size: 3vh;
+  text-shadow: 1px 0 5px #000000;
+}
+
 .App-navbar {
   background-color: var(--darkGrey);
   min-height: 5vh;
@@ -108,22 +131,23 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  justify-content: center;
   font-size: calc(5px + 2vmin);
 }
 .nav-item {
   align-items: stretch;
   display: flex;
   height: 100%;
-  color: #ffffff;
+  color: var(--oorange);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
   text-decoration: none;
   padding: 0.35rem;
+  text-shadow: 1px 0 2px #292929;
+  border: 1px solid var(--darkGrey); /* This border is same color as background only here to diminish the gap*/
 }
 
 .nav-item-active {
-  background-color: var(--lightGrey);
+  background-color: var(--grey);
   color: var(--orange);
   align-items: stretch;
   display: flex;
@@ -131,26 +155,29 @@
   font-style: normal;
   text-decoration: none;
   padding: 0.35rem;
-  border-radius: 12px 12px 12px 12px;  
+  border-radius: 10px 10px 0px 0;
+  text-shadow: 1px 0 2px var(--darkGrey);
+  border-top: 1px solid var(--ggrey);
 }
 
 .nav-item:hover {
+  background-color: var(--grey);
   color: var(--orange);
   text-decoration: none;
-  background-color: var(--lightGrey);
   align-items: stretch;
   display: flex;
   padding: 0.35rem;
-  border-radius: 12px 12px 12px 12px;
+  border-radius: 10px 10px 0px 0;
+  text-shadow: 1px 0 2px var(--darkGrey);
+  border-top: 1px solid var(--ggrey);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.main-content-area { 
-  
-  height: 78vh;
+.main-content-area {
+  height: 79vh;
   /* box-shadow: -5px 10px 10px 10px rgba(0,0,0,.3), 5px 10px 10px 10px rgba(0,0,0,.3); */
 }
 
@@ -164,9 +191,30 @@
   font-family: Arial, Helvetica, sans-serif;
   gap: 1vh;
   border: 1px solid rgb(112, 112, 112);
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 10px;
   margin: 2vh;
   padding: 1vh;
+}
+
+.intro-content-buble {
+  text-align: left;
+  background: linear-gradient(to bottom, var(--lightGrey), var(--llightGrey));
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(112, 112, 112);
+  border-radius: 10px;
+  margin: 2vh;
+  padding: 1vh;
+  
+}
+
+.sidebar-container {
+  /* margin: 10px;
+  gap: 1rem; */
+}
+
+.sidebar-buble {
+  margin: 20px;
+  background-color: var(--lightGrey);
 }
 
 body {
@@ -176,16 +224,16 @@ body {
 
 .image-large {
   height: auto;
-  max-width: 40vh
+  max-width: 40vh;
 }
 .image-small {
   background-color: var(--lightGrey);
   margin-top: 3vh;
   height: auto;
-  max-width: 8vh
+  max-width: 8vh;
 }
 .image-rounded {
-  max-width: 20vh;
+  max-width: 9rem;
   height: auto;
   border-radius: 50%;
   border: 3px solid black;

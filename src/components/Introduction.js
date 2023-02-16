@@ -8,62 +8,47 @@ export default class Introduction extends React.Component {
   render() {
     return (
       <>
-        <Container className="main-content-buble">
+        {/* Introduction buble rows should look like md=(3 - 9) */}
+        <Container className="intro-content-buble">
           <Row>
-            <Col md={2}>
-              <h2 className="text-header"> About me </h2>
+            <Col md={3}>
+              <h3 className="text-header"> About me </h3>
             </Col>
-            <Col md={6}></Col>
-            <Col md={2}>
-              <div>
-              <img
-                  src={require("../assets/pfSquare.jpeg")}
-                  className="image-rounded"
-                  alt=""
-                />
-              </div>
-            </Col>
+            <Col md={9}></Col>
           </Row>
           <Row>
-            <Col>
+            <Col md={1}></Col>
+            <Col md={10}>
               <div>
                 <p>
-                  Lorem ipsum vitae <br />
-                  bla bla bla sprinkler system gast ik typ faking veel hier je
-                  weet zelf hoe dat gaat dit is niet normaal kij lange uitlge
-                  zelfs met lange ij dat meen je niet ongelofelialjfdkahef ahesl
-                  flehf aesh foasehfeoa fhaoids hfeohaf dh fohea fhoda hfeo
+                  My name is Thomas and I am a software engineer. I studied at
+                  the Eindhoven University of Technology. There I obtained my
+                  Masters degree in Computer Science and Engineering. <br />I
+                  love programming, gaming and running
                 </p>
               </div>
             </Col>
           </Row>
         </Container>
-        <Container className="main-content-buble">
-        <Row>
-            <Col md={2}>
-              <h2 className="text-header"> About me </h2>
+
+        <Container className="intro-content-buble">
+          <Row>
+            <Col md={4}>
+              <h3 className="text-header"> This website </h3>
             </Col>
             <Col md={6}></Col>
-            <Col md={2}>
-              <div>
-              <img
-                  src={require("../assets/pfSquare.jpeg")}
-                  className="image-rounded"
-                  alt=""
-                />
-              </div>
-            </Col>
+            <Col md={4}></Col>
           </Row>
           <Row>
-            <Col>
-              {" "}
+            <Col md={1}></Col>
+            <Col md={10}>
               <div>
                 <p>
-                  Lorem ipsum vitae <br />
-                  bla bla bla sprinkler system gast ik typ faking veel hier je
-                  weet zelf hoe dat gaat dit is niet normaal kij lange uitlge
-                  zelfs met lange ij dat meen je niet ongelofelialjfdkahef ahesl
-                  flehf aesh foasehfeoa fhaoids hfeohaf dh fohea fhoda hfeo
+                  This website was made using HTML5, Css, React.js and
+                  Bootstrap. <br />
+                  The goal of this project was to create a resume template that
+                  is easilly updated and shows of my web-development skills.
+                  This way it serves multiple purposes.
                 </p>
               </div>
             </Col>

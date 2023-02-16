@@ -8,7 +8,7 @@ export default class WorkExperience extends React.Component {
   render() {
     return (
       <>
-        <Container>
+        <Container> 
           <Row className="main-content-buble">
             <Col md={2}>
               <div>

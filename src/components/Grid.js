@@ -1,33 +1,28 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-// import "../bootstrap/css/bootstrap.css"
-
-const bstrp = '../bootstrap/css/bootstrap.css'; 
+import Container from "react-bootstrap/Container";
+ 
 
 export default class Grid extends React.Component {
   render() {
     return (
       <>
-        <Row>
-          <Col md={{offset: 2}}>
-            <div >
-              <img
-                src={require("../assets/profilePicture.jpeg")}
-                className="image-large"
-                alt=""
-              />
-            </div>
-          </Col>
-          <Col md={4}>sm=4</Col>
-          <Col md={8}>sm=8</Col>
-          <Col md={4}>sm=4</Col>
-        </Row>
-        <Row>
-          <Col md>sm=true</Col>
-          <Col md>sm=true</Col>
-          <Col md>sm=true</Col>
-        </Row>
+        <Container className="intro-content-buble">
+          <Row>
+            <Col md={4}>
+              COL1
+            </Col>
+            <Col md={6}>COL2</Col>
+          </Row>
+          <Row>
+            <Col md={4}>COL3
+              </Col>
+            <Col md={6}>
+              COL4
+            </Col>
+          </Row>
+        </Container>
       </>
     );
   }

@@ -5,6 +5,7 @@ import "./bootstrap/css/bootstrap-grid.css";
 import "./bootstrap/css/bootstrap.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SideBar from "./components/SideBar";
 import { Outlet, NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import { Nav, Navbar, Row, Col } from "react-bootstrap";
@@ -15,7 +16,7 @@ export default class App extends React.Component {
     super();
     this.state = {
       title: "Thomas Versaevel",
-      subtitle: "CV",
+      subtitle: "Computer Science Engineer",
       footer: "Thank you for reading my CV",
     };
   }
@@ -26,8 +27,8 @@ export default class App extends React.Component {
         <div>
           <Container className="container-margin">
             <Row className={"App-header"}>
-              <Col md={1} xs={2}></Col>
-              <Col md={8} xs={7}>
+              <Col md={1} xs={1}></Col>
+              <Col lg={10} md={10} xs={10}>
                 <div id="header-title">
                   <Header
                     title={this.state.title}
@@ -35,53 +36,47 @@ export default class App extends React.Component {
                   />
                 </div>
               </Col>
-              <Col md={2}></Col>
+              <div id="profile-picture">
+                <img
+                  src={require("./assets/pfSquare.jpeg")}
+                  className="image-rounded"
+                  alt=""
+                />
+              </div>
             </Row>
             <Row className="App-navbar">
-              <Col md={1}></Col>
-              <Col md={8}>
-                <Navbar sticky="top">
-                  <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="App-nav">
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive ? "nav-item-active" : "nav-item"
-                        }
-                        to="introduction"
-                      >
-                        Introduction
-                      </NavLink>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive ? "nav-item-active" : "nav-item"
-                        }
-                        to="education"
-                      >
-                        Education
-                      </NavLink>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive ? "nav-item-active" : "nav-item"
-                        }
-                        to="workexperience"
-                      >
-                        Work Experience
-                      </NavLink>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive ? "nav-item-active" : "nav-item"
-                        }
-                        to="grid"
-                      >
-                        Grid
-                      </NavLink>
-                    </Nav>
-                  </Navbar.Collapse>
-                </Navbar>
+              <Col lg={1} md={1} xs={1}></Col>
+              <Col lg={10} md={10} xs={10}>
+                  <Nav className="App-nav">
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive ? "nav-item-active" : "nav-item"
+                      }
+                      to="introduction"
+                    >
+                      Introduction
+                    </NavLink>
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive ? "nav-item-active" : "nav-item"
+                      }
+                      to="education"
+                    >
+                      Education
+                    </NavLink>
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive ? "nav-item-active" : "nav-item"
+                      }
+                      to="workexperience"
+                    >
+                      Experience
+                    </NavLink>
+                  </Nav>
               </Col>
-              <Col md={2}></Col>
+
             </Row>
-            <Row className="main-content-row">
+            <Row>
               <Col lg={1} md={1} xs={1}>
                 <div className="vertical-bar-left"></div>
               </Col>
@@ -93,11 +88,14 @@ export default class App extends React.Component {
                 </TransitionGroup>
               </Col>
               <Col lg={3} md={3} xs={3}>
-                <div className="vertical-bar-right"></div>
+                <div className="vertical-bar-right">
+                  <SideBar></SideBar>
+                </div>
               </Col>
             </Row>
             <Row className="App-footer">
-              <Col md={8}>
+              <Col md={1}></Col>
+              <Col lg={10} md={8}>
                 <div>
                   <Footer title={this.state.footer} />
                 </div>

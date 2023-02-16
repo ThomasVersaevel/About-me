@@ -1,21 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import App from "./App";
-import {
-  Routes,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { createRoot } from "react-dom/client";
 
 import Education from "./components/Education";
 import WorkExperience from "./components/WorkExperience";
 import Introduction from "./components/Introduction";
 import Grid from "./components/Grid";
 
-document.body.style.overflow = "hidden"
+document.body.style.overflow = "hidden";
+const container = document.getElementById("root");
+const root = createRoot(container);
 
-
-ReactDOM.render(
+root.render(
   <div>
     <BrowserRouter>
       <Routes>
@@ -27,6 +24,5 @@ ReactDOM.render(
         </Route>
       </Routes>
     </BrowserRouter>
-  </div>,
-  document.getElementById("root")
+  </div>
 );
