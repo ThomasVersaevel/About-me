@@ -21,8 +21,6 @@ export default class App extends React.Component {
     };
   }
 
- 
-
   render() {
     return (
       <>
@@ -116,7 +114,7 @@ export default class App extends React.Component {
                     Linked
                     <img
                       className="image-link"
-                      alt=""
+                      alt="icon.png"
                       src={require("./assets/linkedin.png")}
                     />
                   </a>

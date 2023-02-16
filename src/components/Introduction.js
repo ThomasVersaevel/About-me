@@ -21,7 +21,9 @@ export default function Introduction() {
           <Container className="intro-content-bubble">
             <Row>
               <Col md={3}>
-                <h3 className="text-header"> About me </h3>
+                <div>
+                  <h3 className="text-header"> About me </h3>
+                </div>
               </Col>
               <Col md={9}></Col>
             </Row>
@@ -43,7 +45,9 @@ export default function Introduction() {
           <Container className="intro-content-bubble">
             <Row>
               <Col md={4}>
-                <h3 className="text-header"> This website </h3>
+                <div className="shadow-lg">
+                  <h3 className="text-header"> This website </h3>
+                </div>
               </Col>
               <Col md={6}></Col>
               <Col md={4}></Col>
@@ -69,8 +73,10 @@ export default function Introduction() {
             <Row>
               <Col md={5} className="intro-content-bubble">
                 <Row>
-                  <Col md={4}>
-                    <h3 className="text-header"> Github </h3>
+                  <Col md={6}>
+                    <div>
+                      <h3 className="text-header"> Github </h3>
+                    </div>
                   </Col>
                   <Col md={6}></Col>
                   <Col md={4}></Col>
@@ -95,11 +101,9 @@ export default function Introduction() {
               </Col>
               <Col md={5} className="intro-content-bubble">
                 <Row>
-                  <Col md={4}>
+                  <Col md={6}>
                     <h3 className="text-header"> Empty bubble </h3>
                   </Col>
-                  <Col md={6}></Col>
-                  <Col md={4}></Col>
                 </Row>
                 <Row>
                   <Col md={1}></Col>

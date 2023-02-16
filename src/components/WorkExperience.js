@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Article from "./Article";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -6,21 +6,15 @@ import Container from "react-bootstrap/Container";
 import Collapse from "react-bootstrap/Collapse";
 
 export default function WorkExperience() {
-  const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    // called on load, and due to empty dependencies[] wont load again
-    setOpen(true, []);
-  });
 
   return (
     <>
-      <Collapse in={open}>
+      <Collapse in={true} appear={true}>
         <div>
           <Container>
             <Row className="main-content-bubble">
               <Col md={2}>
-                <div>
+                <div className="image-center">
                   <img
                     src={require("../assets/appsemble.png")}
                     className="image-small"
