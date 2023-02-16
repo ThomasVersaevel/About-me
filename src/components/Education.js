@@ -9,7 +9,7 @@ export default class Education extends React.Component {
     return (
       <>
         <Container>
-          <Row>
+          <Row className="main-content-buble">
             <Col md={2}>
               <div>
                 <img

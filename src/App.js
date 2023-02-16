@@ -24,9 +24,10 @@ export default class App extends React.Component {
     return (
       <>
         <div>
-          <Container className="container-margin" >
+          <Container className="container-margin">
             <Row className={"App-header"}>
-              <Col md={8}>
+              <Col md={1} xs={2}></Col>
+              <Col md={8} xs={7}>
                 <div id="header-title">
                   <Header
                     title={this.state.title}
@@ -37,6 +38,7 @@ export default class App extends React.Component {
               <Col md={2}></Col>
             </Row>
             <Row className="App-navbar">
+              <Col md={1}></Col>
               <Col md={8}>
                 <Navbar sticky="top">
                   <Navbar.Collapse id="basic-navbar-nav">
@@ -81,7 +83,7 @@ export default class App extends React.Component {
             </Row>
             <Row className="main-content-row">
               <Col lg={1} md={1} xs={1}>
-
+                <div className="vertical-bar-left"></div>
               </Col>
               <Col lg={8} md={8} xs={10} className="main-content-area">
                 <TransitionGroup>
@@ -90,12 +92,10 @@ export default class App extends React.Component {
                   </CSSTransition>
                 </TransitionGroup>
               </Col>
-              <Col lg={3} md={4}>
-              <div className="vertical-bar-right"></div>
+              <Col lg={3} md={3} xs={3}>
+                <div className="vertical-bar-right"></div>
               </Col>
             </Row>
-            </Container>
-            <Container  className="App-footer-position"> 
             <Row className="App-footer">
               <Col md={8}>
                 <div>
@@ -106,8 +106,6 @@ export default class App extends React.Component {
             </Row>
           </Container>
         </div>
-        <div className="vertical-bar-left"></div>
-        
       </>
     );
   }
