@@ -11,14 +11,14 @@ export default class SideBar extends React.Component {
         <Container className="sidebar-container">
           <Row>
             <Col md={2}></Col>
-            <Col md={8} className="sidebar-buble">
+            <Col md={8} className="sidebar-bubble">
               <p>Professional Skils</p>
             </Col>
             <Col md={2}></Col>
           </Row>
           <Row>
             <Col md={2}></Col>
-            <Col md={8} className="sidebar-buble">
+            <Col md={8} className="sidebar-bubble">
               <p>Hobbies</p>
             </Col>
             <Col md={2}></Col>

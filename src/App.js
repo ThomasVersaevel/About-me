@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
 import { Outlet, NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import { Nav, Navbar, Row, Col } from "react-bootstrap";
+import { Nav, Row, Col, Collapse } from "react-bootstrap";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 export default class App extends React.Component {
@@ -20,6 +20,8 @@ export default class App extends React.Component {
       footer: "Thank you for reading my CV",
     };
   }
+
+ 
 
   render() {
     return (
@@ -47,45 +49,50 @@ export default class App extends React.Component {
             <Row className="App-navbar">
               <Col lg={1} md={1} xs={1}></Col>
               <Col lg={10} md={10} xs={10}>
-                  <Nav className="App-nav">
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "nav-item-active" : "nav-item"
-                      }
-                      to="introduction"
-                    >
-                      Introduction
-                    </NavLink>
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "nav-item-active" : "nav-item"
-                      }
-                      to="education"
-                    >
-                      Education
-                    </NavLink>
-                    <NavLink
-                      className={({ isActive }) =>
-                        isActive ? "nav-item-active" : "nav-item"
-                      }
-                      to="workexperience"
-                    >
-                      Experience
-                    </NavLink>
-                  </Nav>
+                <Nav className="App-nav">
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "nav-item-active" : "nav-item"
+                    }
+                    to="introduction"
+                  >
+                    Introduction
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "nav-item-active" : "nav-item"
+                    }
+                    to="education"
+                  >
+                    Education
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "nav-item-active" : "nav-item"
+                    }
+                    to="workexperience"
+                  >
+                    Experience
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "nav-item-active" : "nav-item"
+                    }
+                    to="grid"
+                  >
+                    Grid
+                  </NavLink>
+                </Nav>
               </Col>
-
             </Row>
             <Row>
               <Col lg={1} md={1} xs={1}>
                 <div className="vertical-bar-left"></div>
               </Col>
               <Col lg={8} md={8} xs={10} className="main-content-area">
-                <TransitionGroup>
-                  <CSSTransition timeout={300} className="fade">
-                    <Outlet />
-                  </CSSTransition>
-                </TransitionGroup>
+                <Collapse>
+                  <Outlet />
+                </Collapse>
               </Col>
               <Col lg={3} md={3} xs={3}>
                 <div className="vertical-bar-right">
@@ -95,12 +102,26 @@ export default class App extends React.Component {
             </Row>
             <Row className="App-footer">
               <Col md={1}></Col>
-              <Col lg={10} md={8}>
+              <Col lg={9} md={10}>
                 <div>
                   <Footer title={this.state.footer} />
                 </div>
               </Col>
-              <Col md={2}></Col>
+              <Col md={2}>
+                <div className="link-position">
+                  <a
+                    className="link"
+                    href="https://www.linkedin.com/in/thomas-versaevel-bb0872200/"
+                  >
+                    Linked
+                    <img
+                      className="image-link"
+                      alt=""
+                      src={require("./assets/linkedin.png")}
+                    />
+                  </a>
+                </div>
+              </Col>
             </Row>
           </Container>
         </div>
