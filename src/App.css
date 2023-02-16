@@ -37,11 +37,7 @@ h3 {
 
 /* absolute positioning is a hack for this website */
 #profile-picture {
-  position: absolute;
-  top: 1vh;
-  left: 80rem;
-  justify-content: center;
-  display: flex;
+  overflow: hidden;
 }
 
 /* This bar is hacked togheter not quite nicely */

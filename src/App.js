@@ -36,13 +36,14 @@ export default class App extends React.Component {
                   />
                 </div>
               </Col>
-              <div id="profile-picture">
+              <Col><div id="profile-picture">
                 <img
                   src={require("./assets/pfSquare.jpeg")}
                   className="image-rounded"
                   alt=""
                 />
               </div>
+              </Col>
             </Row>
             <Row className="App-navbar">
               <Col lg={1} md={1} xs={1}></Col>
