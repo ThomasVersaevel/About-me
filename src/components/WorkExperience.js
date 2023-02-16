@@ -35,7 +35,7 @@ export default function WorkExperience() {
             </Row>
             <Row className="main-content-bubble">
               <Col md={2}>
-                <div>
+                <div className="image-center">
                   <img
                     src={require("../assets/pathe.png")}
                     className="image-small"
@@ -56,7 +56,7 @@ export default function WorkExperience() {
             </Row>
             <Row className="main-content-bubble">
               <Col md={2}>
-                <div>
+                <div className="image-center">
                   <img
                     src={require("../assets/pdLogo.png")}
                     className="image-small"
@@ -77,7 +77,7 @@ export default function WorkExperience() {
             </Row>
             <Row className="main-content-bubble">
               <Col md={2}>
-                <div>
+                <div className="image-center">
                   <img
                     src={require("../assets/psfm.png")}
                     className="image-small"

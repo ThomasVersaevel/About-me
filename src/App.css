@@ -54,19 +54,20 @@ h3 {
   /* var(--headerHeight); */
   margin: auto;
   /* background: linear-gradient(to left, var(--orange), var(--oorange)); */
-  background-color: var(--orange);
+  background-color: var(--ooorange);
   box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 1);
   border-left: 1px solid black;
 }
 .vertical-bar-right {
   width: 12vw;
+  max-width: 250px;
   height: 100%;
   position: absolute;
   right: 0px;
   top: 0px;
   margin: auto;
   /* background: linear-gradient(to right, var(--orange), var(--ooorange)); */
-  background-color: var(--orange);
+  background-color: var(--ooorange);
   box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 1);
 }
 
@@ -129,6 +130,13 @@ h3 {
 #footer-text {
   font-size: 3vh;
   text-shadow: 1px 0 1px #2e2e2e;
+}
+
+#extra-footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--ddarkGrey);
 }
 
 .App-navbar {
@@ -238,6 +246,7 @@ h3 {
 }
 
 body {
+  background-size: cover;
   background-image: url("./assets/background.jpg");
   background-color: var(--grey);
 }

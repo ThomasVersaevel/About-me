@@ -20,7 +20,7 @@ export default function Educatio() {
           <Container>
             <Row className="main-content-bubble">
               <Col md={2}>
-                <div>
+                <div className="image-center">
                   <img
                     src={require("../assets/tue.png")}
                     className="image-small"
@@ -41,7 +41,7 @@ export default function Educatio() {
             </Row>
             <Row className="main-content-bubble">
               <Col md={2}>
-                <div>
+                <div className="image-center">
                   <img
                     src={require("../assets/tue.png")}
                     className="image-small"
@@ -62,7 +62,7 @@ export default function Educatio() {
             </Row>
             <Row className="main-content-bubble">
               <Col md={2}>
-                <div>
+                <div className="image-center">
                   <img
                     src={require("../assets/newman.png")}
                     className="image-small"

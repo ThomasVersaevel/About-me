@@ -104,6 +104,9 @@ export default class App extends React.Component {
                 <div>
                   <Footer title={this.state.footer} />
                 </div>
+                <div id="extra-footer">
+                  
+                </div>
               </Col>
               <Col md={2}>
                 <div className="link-position">
