@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import "./Animation.css";
 import "./bootstrap/css/bootstrap-grid.css";
+import "./bootstrap/css/bootstrap.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Outlet, NavLink } from "react-router-dom";

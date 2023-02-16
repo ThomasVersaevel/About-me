@@ -9,7 +9,7 @@ export default class WorkExperience extends React.Component {
     return (
       <>
         <Container>
-          <Row>
+          <Row className="main-content-buble">
             <Col md={2}>
               <div>
                 <img
@@ -19,7 +19,7 @@ export default class WorkExperience extends React.Component {
                 />
               </div>
             </Col>
-            <Col md={10}>
+            <Col md={8}>
               <p>
                 <Article
                   key={0}
@@ -30,17 +30,17 @@ export default class WorkExperience extends React.Component {
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className="main-content-buble">
             <Col md={2}>
               <div>
                 <img
-                  src={require("../assets/tue.png")}
+                  src={require("../assets/pathe.png")}
                   className="image-small"
                   alt=""
                 />
               </div>
             </Col>
-            <Col md={10}>
+            <Col md={8}>
               <p>
                 <Article
                   key={0}
@@ -51,17 +51,17 @@ export default class WorkExperience extends React.Component {
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className="main-content-buble">
             <Col md={2}>
               <div>
                 <img
-                  src={require("../assets/tue.png")}
+                  src={require("../assets/pdLogo.png")}
                   className="image-small"
                   alt=""
                 />
               </div>
             </Col>
-            <Col md={10}>
+            <Col md={8}>
               <p>
                 <Article
                   key={0}
@@ -72,11 +72,11 @@ export default class WorkExperience extends React.Component {
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className="main-content-buble">
             <Col md={2}>
               <div>
                 <img
-                  src={require("../assets/tue.png")}
+                  src={require("../assets/psfm.png")}
                   className="image-small"
                   alt=""
                 />

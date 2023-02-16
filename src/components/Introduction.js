@@ -26,7 +26,6 @@ export default class Introduction extends React.Component {
           </Row>
           <Row>
             <Col>
-              {" "}
               <div>
                 <p>
                   Lorem ipsum vitae <br />
