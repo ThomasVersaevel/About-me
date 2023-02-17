@@ -37,7 +37,9 @@ h3 {
 
 /* absolute positioning is a hack for this website */
 #profile-picture {
-  overflow: hidden;
+  max-width: 12rem;
+  min-width: 3rem;
+  margin: auto;
 }
 
 /* This bar is hacked togheter not quite nicely */
@@ -92,6 +94,7 @@ h3 {
   background: linear-gradient(to top, var(--darkGrey), var(--ddarkGrey));
   background-color: var(--darkGrey);
   min-height: var(--headerHeight);
+  max-height: var(--headerHeight);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,6 +119,7 @@ h3 {
 #header-title {
   font-size: calc(10px + 2vmin);
   text-shadow: 1px 0 1px #000000;
+  /* margin-bottom: 4rem; */
 }
 
 #header-title-subtitle {
@@ -185,7 +189,7 @@ h3 {
 
 
 .main-content-area {
-  height: 79vh;
+  height: 80vh;
   /* box-shadow: -5px 10px 10px 10px rgba(0,0,0,.3), 5px 10px 10px 10px rgba(0,0,0,.3); */
 }
 
@@ -262,7 +266,8 @@ body {
 }
 
 .image-rounded {
-  max-width: 9rem;
+  max-width:100%;
+  max-height:100%;
   height: auto;
   border-radius: 50%;
   border: 3px solid black;
