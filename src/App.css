@@ -40,13 +40,6 @@ h3 {
   text-shadow: 1px 0 1px #272727;
 }
 
-/* absolute positioning is a hack for this website */
-#profile-picture {
-  max-width: 12rem;
-  min-width: 1rem;
-  margin: auto;
-}
-
 /* This bar is hacked togheter not quite nicely */
 .vertical-bar-left {
   width: 2vw;
@@ -279,11 +272,16 @@ body {
 
 .image-rounded {
   max-width: 100%;
-  max-height: 16vh;
-  min-height: 2vh;
   border-radius: 50%;
   border: 3px solid black;
   margin-top: 3vh;
+}
+
+/* absolute positioning is a hack for this website */
+#profile-picture {
+  max-width: 11rem;
+  min-width: 4rem;
+  margin: auto;
 }
 
 .image-center {

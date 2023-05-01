@@ -23,27 +23,6 @@ export default function Introduction() {
               <Row>
                 <Col md={12}>
                   <div>
-                    <h3 className="text-header"> This CV </h3>
-                  </div>
-                </Col>
-                <Col md={9}></Col>
-              </Row>
-              <Row>
-                <Col md={1}></Col>
-                <Col md={10}>
-                  <div>
-                    <p>
-                      This website serves as my CV, in the tabs above you can
-                      find my complete education history and work experience.
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Row>
-            <Row className="intro-content-bubble">
-              <Row>
-                <Col md={12}>
-                  <div>
                     <h3 className="text-header"> About me </h3>
                   </div>
                 </Col>
@@ -59,6 +38,28 @@ export default function Introduction() {
                       obtained my Masters degree in Computer Science and
                       Engineering in 2024. <br />I love programming, gaming,
                       playing the piano and running.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Row>
+
+            <Row className="intro-content-bubble">
+              <Row>
+                <Col md={12}>
+                  <div>
+                    <h3 className="text-header"> My CV </h3>
+                  </div>
+                </Col>
+                <Col md={9}></Col>
+              </Row>
+              <Row>
+                <Col md={1}></Col>
+                <Col md={10}>
+                  <div>
+                    <p>
+                      This website serves as my CV, in the tabs above you can
+                      find my complete education history and work experience.
                     </p>
                   </div>
                 </Col>
@@ -92,7 +93,7 @@ export default function Introduction() {
               </Row>
             </Row>
 
-            <Row className="no-padding">
+            <Row>
               <Col md={5} className="intro-content-bubble">
                 <Row>
                   <Col md={6}>
