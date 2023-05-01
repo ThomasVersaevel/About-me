@@ -67,7 +67,7 @@ export default function WorkExperience() {
                 <p>
                   <Article
                     key={0}
-                    timespan={"2021 - Present"}
+                    timespan={"2021 - 2023"}
                     title={"Pathe Eindhoven"}
                     position={"Service Employee"}
                   />

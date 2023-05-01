@@ -28,7 +28,9 @@ export default function SideBar() {
                 <ul className="sidebar-list">
                   <li>Software</li>
                   <li>Computer Hardware</li>
+                  <li>Music</li>
                   <li>Fitness</li>
+                  <li>Cooking</li>
                 </ul>
               </p>
             </div>
@@ -38,6 +40,8 @@ export default function SideBar() {
                 <ul className="sidebar-list">
                   <li>Gaming</li>
                   <li>Game development</li>
+                  <li>Piano</li>
+                  <li>Gym</li>
                   <li>Running</li>
                 </ul>
               </p>
@@ -46,48 +50,29 @@ export default function SideBar() {
               <p>
                 <b>Personal Info</b> <br />
                 <div className="sidebar-content">
-                  <img
-                    className="image-link"
-                    alt="icon.png"
-                    src={require("../assets/home.png")}
-                  />
-                  Eindhoven
-                  <br />
-                  <img
-                    className="image-link"
-                    alt="icon.png"
-                    src={require("../assets/mail.png")}
-                  />
-                  Thomas0699@gmail.com
-                  <br />
+                  <ul classname="sidebar-list">
+                    <li>
+                      <img
+                        className="image-link"
+                        alt="icon.png"
+                        src={require("../assets/home.png")}
+                      />
+                      Eindhoven
+                    </li>
+                    <li>
+                      {" "}
+                      <img
+                        className="image-link"
+                        alt="icon.png"
+                        src={require("../assets/partyhat.png")}
+                      />
+                      6th of june 1999
+                    </li>
+                  </ul>
                 </div>
               </p>
             </div>
           </div>
-
-          {/* <Container className="sidebar-container">
-            <Row>
-              <Col md={2}></Col>
-              <Col md={8} className="sidebar-bubble">
-                <p><b>Professional Skils</b></p>
-              </Col>
-              <Col md={2}></Col>
-            </Row>
-            <Row>
-              <Col md={2}></Col>
-              <Col md={8} className="sidebar-bubble">
-                <p><b>Hobbies</b></p>
-              </Col>
-              <Col md={2}></Col>
-            </Row>
-            <Row>
-              <Col md={2}></Col>
-              <Col md={8} className="sidebar-bubble">
-                <p><b>Personal Info</b></p>
-              </Col>
-              <Col md={2}></Col>
-            </Row>
-          </Container> */}
         </div>
       </Collapse>
     </>

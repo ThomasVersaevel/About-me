@@ -268,7 +268,7 @@ body {
 .image-small {
   background-color: var(--lightGrey);
   height: auto;
-  max-width: 8vh;
+  max-width: 10vh;
 }
 
 .image-link {
