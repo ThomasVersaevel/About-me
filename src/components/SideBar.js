@@ -1,7 +1,3 @@
-import React, { useState, useEffect } from "react";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
 import Collapse from "react-bootstrap/Collapse";
 
 export default function SideBar() {
@@ -18,7 +14,19 @@ export default function SideBar() {
                   <li>Presenting</li>
                   <li>Teamwork</li>
                   <li>Leadership</li>
+                  <li>Scrum Master</li>
                   <li>Reflection</li>
+                </ul>
+              </p>
+            </div>
+            <div className="sidebar-bubble">
+              <p>
+                <b>Languages</b>
+                <br />
+                <ul className="sidebar-list">
+                  <li>Dutch</li>
+                  <li>English</li>
+                  <li>German</li>
                 </ul>
               </p>
             </div>

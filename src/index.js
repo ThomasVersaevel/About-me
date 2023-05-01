@@ -21,7 +21,7 @@ root.render(
           <Route path="introduction" element={<Introduction />} />
           <Route path="education" element={<Education />} />
           <Route path="workexperience" element={<WorkExperience />} />
-          <Route path="grid" element={<Grid />} />
+          {/* <Route path="grid" element={<Grid />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
