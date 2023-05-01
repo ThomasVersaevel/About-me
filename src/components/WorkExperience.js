@@ -6,7 +6,6 @@ import Container from "react-bootstrap/Container";
 import Collapse from "react-bootstrap/Collapse";
 
 export default function WorkExperience() {
-
   return (
     <>
       <Collapse in={true} appear={true}>
@@ -27,8 +26,29 @@ export default function WorkExperience() {
                   <Article
                     key={0}
                     timespan={"2023 - Present"}
+                    title={"Appsemble"}
+                    position={"Full-stack Developer"}
+                  />
+                </p>
+              </Col>
+            </Row>
+            <Row className="main-content-bubble">
+              <Col md={2}>
+                <div className="image-center">
+                  <img
+                    src={require("../assets/appsemble.png")}
+                    className="image-small"
+                    alt=""
+                  />
+                </div>
+              </Col>
+              <Col md={8}>
+                <p>
+                  <Article
+                    key={0}
+                    timespan={"2023 - 2023"}
                     title={"Appsemble Internship"}
-                    position={"Software Engineer"}
+                    position={"Software Developer"}
                   />
                 </p>
               </Col>

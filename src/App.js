@@ -9,7 +9,6 @@ import SideBar from "./components/SideBar";
 import { Outlet, NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import { Nav, Row, Col, Collapse } from "react-bootstrap";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 export default class App extends React.Component {
   constructor() {
@@ -37,13 +36,11 @@ export default class App extends React.Component {
                 </div>
               </Col>
               <Col xl={1} lg={1} md={1} xs={1} id="profile-picture">
-
                 <img
                   src={require("./assets/pfSquare.jpeg")}
                   className="image-rounded"
                   alt=""
                 />
-
               </Col>
             </Row>
             <Row className="App-navbar">
@@ -106,9 +103,7 @@ export default class App extends React.Component {
                 <div>
                   <Footer title={this.state.footer} />
                 </div>
-                <div id="extra-footer">
-
-                </div>
+                <div id="extra-footer"></div>
               </Col>
               <Col md={2}>
                 <div className="link-position">
