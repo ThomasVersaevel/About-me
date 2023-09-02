@@ -8,7 +8,7 @@ export default function SideBar() {
           <div className="sidebar-container">
             <div className="sidebar-bubble">
               <p>
-                <b>Professional Skils</b>
+                <b>Professional Skills</b>
                 <br />
                 <ul className="sidebar-list">
                   <li>Presenting</li>
