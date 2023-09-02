@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Collapse from "react-bootstrap/Collapse"
 
-export default function Educatio() {
+export default function Education() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {

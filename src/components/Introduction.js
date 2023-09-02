@@ -115,7 +115,11 @@ export default function Introduction() {
                           target="_blank"
                           href="https://github.com/ThomasVersaevel?tab=repositories"
                         >
-                          Github
+                         <img
+                      className="image-link"
+                      alt="icon.png"
+                      src={require("../assets/github.png")}
+                    />Github
                         </a>{" "}
                         to see the projects I have worked on in the past.
                       </p>

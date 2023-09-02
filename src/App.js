@@ -27,7 +27,7 @@ export default class App extends React.Component {
           <Container className="container-margin">
             <Row className={"App-header"}>
               <Col xl={1} lg={1} md={1} xs={1}></Col>
-              <Col xl={9} lg={8} md={8} xs={8}>
+              <Col xl={10} lg={9} md={10} xs={10}>
                 <div id="header-title">
                   <Header
                     title={this.state.title}
@@ -35,12 +35,14 @@ export default class App extends React.Component {
                   />
                 </div>
               </Col>
-              <Col xl={2} lg={3} md={3} xs={3} id="profile-picture">
-                <img
-                  src={require("./assets/pfSquare.jpeg")}
-                  className="image-rounded"
-                  alt=""
-                />
+              <Col xl={1} lg={2} md={2} xs={1}>
+                <div id="profile-picture">
+                  <img
+                    src={require("./assets/pfSquare.jpeg")}
+                    className="image-rounded"
+                    alt=""
+                  />
+                </div>
               </Col>
             </Row>
             <Row className="App-navbar">
