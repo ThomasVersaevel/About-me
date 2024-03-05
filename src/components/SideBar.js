@@ -1,3 +1,4 @@
+import React from "react";
 import Collapse from "react-bootstrap/Collapse";
 
 export default function SideBar() {
