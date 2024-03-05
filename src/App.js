@@ -1,14 +1,14 @@
 import React from "react";
+import { Outlet, NavLink } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import { Nav, Row, Col, Collapse } from "react-bootstrap";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import SideBar from "./components/SideBar";
 import "./App.css";
 import "./Animation.css";
 import "./bootstrap/css/bootstrap-grid.css";
 import "./bootstrap/css/bootstrap.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import SideBar from "./components/SideBar";
-import { Outlet, NavLink } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import { Nav, Row, Col, Collapse } from "react-bootstrap";
 
 export default class App extends React.Component {
   constructor() {
